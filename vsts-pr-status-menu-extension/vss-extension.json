@@ -1,8 +1,8 @@
 {
     "manifestVersion": 1,
-    "id": "menu-extension",
-    "version": "0.1.8",
-    "name": "Dynamic menu extension",
+    "id": "pr-status-menu-extension-1",
+    "version": "0.1.2",
+    "name": "Dynamic menu extension to status",
     "description": "Visual Studio Services extension",
     "publisher": "MS-Sample",
     "targets": [
@@ -15,10 +15,10 @@
     },
     "contributions": [
         {
-            "id": "sample-action-provider",
+            "id": "sample-pr-status-action-provider",
             "type": "ms.vss-web.action-provider",
             "targets": [
-                "ms.vss-code-web.source-grid-item-menu"
+                "ms.vss-code-web.pull-request-status-menu"
             ],
             "properties": {
                 "group": "contributed",
