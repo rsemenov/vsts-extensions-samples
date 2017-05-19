@@ -1,0 +1,50 @@
+{
+    "manifestVersion": 1,
+    "id": "menu-extension",
+    "version": "0.1.8",
+    "name": "Dynamic menu extension",
+    "description": "Visual Studio Services extension",
+    "publisher": "MS-Sample",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "icons": {
+        "default": "images/logo.png"
+    },
+    "contributions": [
+        {
+            "id": "sample-action-provider",
+            "type": "ms.vss-web.action-provider",
+            "targets": [
+                "ms.vss-code-web.source-grid-item-menu"
+            ],
+            "properties": {
+                "group": "contributed",
+                "uri": "dynamic.html"
+            }
+        }
+    ],
+    "scopes": [
+        "vso.code"
+    ],
+    "files": [
+        {
+            "path": "dynamic.html",
+            "addressable": true
+        },
+        {
+            "path": "scripts",
+            "addressable": true
+        },
+        {
+            "path": "node_modules/vss-web-extension-sdk",
+            "addressable": true
+        },
+        {
+            "path": "images/logo.png",
+            "addressable": true
+        }
+    ]
+}
