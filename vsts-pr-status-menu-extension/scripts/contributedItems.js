@@ -18,7 +18,8 @@ VSS.register("MS-Sample.pr-status-menu-extension-1.sample-pr-status-action-provi
                 {
                     title: "Update release",
                     action: function (actionContext) {
-                        alert("Execute action for status " + context.status.context.name);
+                        alert("Execute action for status " + context.status.context.name + 
+                            "on pull request " + context.pullRequest.pullRequestId);
                     },
                 },
                 { title: "Update build", disabled: true }

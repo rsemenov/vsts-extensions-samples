@@ -1,7 +1,7 @@
 {
     "manifestVersion": 1,
     "id": "pr-status-menu-extension-1",
-    "version": "0.1.8",
+    "version": "0.1.9",
     "name": "Dynamic menu extension to status",
     "description": "Visual Studio Services extension",
     "publisher": "MS-Sample",
