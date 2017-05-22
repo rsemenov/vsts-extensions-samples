@@ -4,7 +4,7 @@ const Succeeded = 2;
 const Failed = 3;
 const Error = 4;
 
-VSS.register("sample-pr-status-action-provider", {
+VSS.register("MS-Sample.pr-status-menu-extension-1.sample-pr-status-action-provider", {
     execute: function (actionArgs) {
         alert("execute: " + (JSON.stringify(actionArgs) || "").substr(0, 100));
     },
