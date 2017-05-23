@@ -1,7 +1,7 @@
 {
     "manifestVersion": 1,
     "id": "pr-status-menu-extension-1",
-    "version": "0.1.9",
+    "version": "0.1.11",
     "name": "Dynamic menu extension to status",
     "description": "Visual Studio Services extension",
     "publisher": "MS-Sample",
@@ -15,10 +15,21 @@
     },
     "contributions": [
         {
+            "id": "sample-pr-status-menu",
+            "type": "ms.vss-web.menu",
+            "targets": [
+                "ms.vss-code-web.pull-request-status-menu"
+            ],
+            "properties": {
+                "statusGenre": "fabricam-ci-service",
+                "statusName": "ci-build"
+            }
+        },
+        {
             "id": "sample-pr-status-action-provider",
             "type": "ms.vss-web.action-provider",
             "targets": [
-                "ms.vss-code-web.pull-request-status-menu"
+                "MS-Sample.pr-status-menu-extension-1.sample-pr-status-menu"
             ],
             "properties": {
                 "group": "contributed",
